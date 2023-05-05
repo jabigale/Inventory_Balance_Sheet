@@ -56,7 +56,14 @@ th, td {
 		<div id="wrapper">
 			<div id="main">
 				<div class="inner">
-				    <table class="center"><tr><td><a href="reports.php"><h1 id="text01"><strong>Reports</strong></h1></a></td><td><a href="items.php"><h1 id="text01"><strong>Add/edit items</strong></h1></a></td></tr></table>
+				    	<ul id="links01" class="links">
+				    	    <li class="n02">
+							<a href="reports.php">Reports</a>
+						</li>
+						<li class="n02">
+							<a href="items.php">Add/edit Item</a>
+						</li>
+					</ul>
 					<?php if($submitted == '1')
 					{
 						echo '<h1 id="text01"><strong>Transfer was submitted</strong></h1>';
@@ -101,7 +108,7 @@ th, td {
 								<select name="item" id="item" required>
 									<option value="">&ndash; Item &ndash;</option>
                                     <?php
-                                    $sql2 = 'SELECT `id`,`name` FROM `items` ORDER BY `name` ASC';
+                                    $sql2 = 'SELECT `id`,`name` FROM `items` WHERE `inactive` IS NULL ORDER BY `name` ASC';
                                     $sth2 = $pdocxn->prepare($sql2);
                                     $sth2->execute();
                                     while($row2 = $sth2->fetch(PDO::FETCH_ASSOC))
