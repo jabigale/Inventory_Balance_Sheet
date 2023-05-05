@@ -791,3 +791,53 @@ form .actions button:disabled {
 		font-size: 1.25em;
 	}
 }
+.links {
+	display: flex;
+	justify-content: var(--flex-alignment);
+	letter-spacing: 0;
+	line-height: 1.5;
+	padding: 0;
+}
+
+.links li {
+	position: relative;
+}
+
+.links li a {
+	direction: var(--site-language-direction);
+	display: block;
+}
+
+#links01 {
+	gap: 0.5rem;
+	flex-direction: row;
+	flex-wrap: wrap;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1em;
+	font-weight: 300;
+}
+
+#links01 li a {
+	color: #525252;
+	text-decoration: underline;
+}
+
+#links01 li a:hover {
+	text-decoration: none;
+}
+
+#links01 .n01 a:hover {
+	color: #0029FF;
+}
+
+#links01 .n02 a:hover {
+	color: #0029FF;
+}
+#links01 {
+	gap: 0.5rem;
+	font-size: 1em;
+}
+#links01 {
+	gap: 0.375rem;
+	font-size: 1em;
+}
