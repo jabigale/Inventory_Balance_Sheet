@@ -40,6 +40,16 @@ if(isset($_POST['formsubmit']))
 		<div id="wrapper">
 			<div id="main">
 				<div class="inner">
+				    	<ul id="links01" class="links">
+						<li class="n01">
+							<a href="index.php">Home</a>
+						</li><li class="n02">
+							<a href="reports.php">Reports</a>
+						</li>
+						<li class="n02">
+							<a href="newitem.php">Add New Item</a>
+						</li>
+					</ul>
 					<h1 id="text01"><strong>Change item cost below</strong></h1>
 					<form enctype="multipart/form-data" id="form02" method="post" action="#">
 
